@@ -1,0 +1,5 @@
+```txt
+fastmcp
+mcp
+psycopg[binary]
+sqlparse
