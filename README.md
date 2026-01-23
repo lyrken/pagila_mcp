@@ -24,4 +24,19 @@ $env:PG_DB="pagila"
 $env:PG_USER="postgres"
 $env:PG_PASS="TU_PASSWORD"
 
+## Modelo relacional (Pagila)
+
+La base de datos Pagila contiene 15 tablas principales, entre ellas:
+actor, address, category, city, country, customer, film, film_actor, film_category,
+inventory, language, payment, rental, staff, store.
+
+Relaciones principales:
+- rental se relaciona con inventory mediante inventory_id.
+- inventory se relaciona con film mediante film_id.
+- payment se relaciona con rental mediante rental_id.
+- film_actor es una tabla puente (muchos a muchos) entre film y actor.
+- film_category es una tabla puente (muchos a muchos) entre film y category.
+- customer se relaciona con rental mediante customer_id.
+
+
 //Lyrken Calle V.//
