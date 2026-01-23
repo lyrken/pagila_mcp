@@ -16,7 +16,7 @@ uv venv
 uv pip install fastmcp "mcp[cli]" psycopg[binary] sqlparse
 v
 
-##VARIABLES DE ENTORNO
+#VARIABLES DE ENTORNO
 
 $env:PG_HOST="localhost"
 $env:PG_PORT="5432"
@@ -24,7 +24,7 @@ $env:PG_DB="pagila"
 $env:PG_USER="postgres"
 $env:PG_PASS="TU_PASSWORD"
 
-## Modelo relacional (Pagila)
+# Modelo relacional (Pagila)
 
 La base de datos Pagila contiene 15 tablas principales, entre ellas:
 actor, address, category, city, country, customer, film, film_actor, film_category,
