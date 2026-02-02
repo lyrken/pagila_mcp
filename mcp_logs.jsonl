@@ -1,0 +1,15 @@
+{"ts": "2026-02-02T01:15:04.026908", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}
+{"ts": "2026-02-02T01:17:22.677586", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}
+{"ts": "2026-02-02T01:17:41.545534", "event": "request_sql", "payload": {"sql": "SELECT COUNT(*) FROM film;"}}
+{"ts": "2026-02-02T01:17:41.765546", "event": "sql_error", "payload": {"sql": "SELECT COUNT(*) FROM film;", "error": "connection failed: connection to server at \"127.0.0.1\", port 5432 failed: fe_sendauth: no password supplied\nMultiple connection attempts failed. All failures were:\n- host: 'localhost', port: 5432, hostaddr: '::1': connection failed: connection to server at \"::1\", port 5432 failed: fe_sendauth: no password supplied\n- host: 'localhost', port: 5432, hostaddr: '127.0.0.1': connection failed: connection to server at \"127.0.0.1\", port 5432 failed: fe_sendauth: no password supplied"}}
+{"ts": "2026-02-02T01:35:25.746134", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}
+{"ts": "2026-02-02T01:35:43.109568", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}
+{"ts": "2026-02-02T01:37:05.361330", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}
+{"ts": "2026-02-02T01:37:15.853073", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}
+{"ts": "2026-02-02T01:39:40.739856", "event": "request_sql", "payload": {"sql": "select_controlado(\"SELECT title FROM film LIMIT 5;\")"}}
+{"ts": "2026-02-02T01:39:40.746034", "event": "blocked_sql", "payload": {"sql": "select_controlado(\"SELECT title FROM film LIMIT 5;\")"}}
+{"ts": "2026-02-02T01:52:10.855655", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}
+{"ts": "2026-02-02T01:54:10.857159", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}
+{"ts": "2026-02-02T02:16:13.001185", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}
+{"ts": "2026-02-02T02:28:56.774743", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}
+{"ts": "2026-02-02T02:29:54.121522", "event": "test", "payload": {"msg": "si ves esto, el log funciona"}}

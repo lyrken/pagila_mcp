@@ -3,15 +3,21 @@ from db import run_select
 from security import is_safe_select
 import json
 from datetime import datetime
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_PATH = os.path.join(BASE_DIR, "mcp_logs.jsonl")
 
 mcp = FastMCP("Pagila MCP (Read-Only)")
 
 def log_event(event: str, payload: dict):
-    print(json.dumps({
-        "ts": datetime.utcnow().isoformat(),
-        "event": event,
-        "payload": payload
-    }, ensure_ascii=False))
+    with open(LOG_PATH, "a", encoding="utf-8") as f:
+        f.write(json.dumps({
+            "ts": datetime.utcnow().isoformat(),
+            "event": event,
+            "payload": payload
+        }, ensure_ascii=False) + "\n")
+log_event("test", {"msg": "si ves esto, el log funciona"})      
 
 @mcp.tool()
 def descubrir_tablas() -> dict:
