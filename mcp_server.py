@@ -116,3 +116,7 @@ app = mcp
 if __name__ == "__main__":
     mcp.run()
 
+##LYRKEN CALLE VILLAMAR##
+##ASISTENTE JAIME HERNANDEZ##
+##FECHA 02/02/2026##
+## PRIMER ENTREGA MCP - PAGILA ##
